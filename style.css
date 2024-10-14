@@ -303,11 +303,17 @@ body{
     display: grid;
     grid-template-columns: 10fr 1fr;
     gap: 50px;
+
+    @media (max-width: 1200px) {
+        grid-template-columns: 1fr;
+        
+    }
 }
 .team__left {
 
     h2{
-        font-size: 175px ;
+        /* font-size: 175px ; */
+        font-size: clamp(3.75rem, 1.433rem + 9.5vw, 10.938rem);
         text-transform: uppercase;
         margin-bottom: 40px;
     }
@@ -316,10 +322,14 @@ body{
     display: grid;
     grid-template-columns: 1fr 1fr;
     gap: 20px;
+
+    @media (max-width: 700px) {
+        grid-template-columns: 1fr;
+    }
 }
 .team__card {
     border: 3px solid black;
-    min-height: 300px;
+    /* min-height: 300px; */
     padding: 25px;
     display: flex;
     align-items: end;
@@ -327,6 +337,7 @@ body{
     background-repeat: no-repeat;
     background-position: center;
     background-size: 130%;
+    aspect-ratio: 2/1;
 
     h3{
         color: white;
@@ -350,4 +361,131 @@ body{
 }
 .tcard-4 {
     background-image: url(./img/team-4.png);
+}
+.header {
+}
+.container {
+}
+.header__wrapper {
+}
+.logo {
+}
+.nav {
+}
+.nav__icons {
+}
+.burger {
+}
+.hero {
+}
+.hero__wrapper {
+}
+.album {
+}
+.swiper {
+}
+.album-swiper-1 {
+}
+.swiper-wrapper {
+}
+.swiper-slide {
+}
+.album-swiper-2 {
+}
+.meet {
+}
+.meet__wrapper {
+}
+.meet__box {
+}
+.meet__info {
+}
+.our {
+}
+.our__title {
+}
+.our__wrapper {
+}
+.card {
+}
+.card-1 {
+}
+.card-2 {
+}
+.card-3 {
+}
+.card-4 {
+}
+.card-5 {
+}
+.our__inner {
+}
+.team {
+}
+.team__wrapper {
+}
+.team__left {
+}
+.team__grid {
+}
+.team__card {
+}
+.tcard-1 {
+}
+.tcard-2 {
+}
+.tcard-3 {
+}
+.tcard-4 {
+}
+.team__img {
+}
+.footer {
+}
+.footer__wrapper {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 50px;
+    margin-top: 100px;
+
+    @media (max-width:1300px) {
+        grid-template-columns: 2fr 1fr ;
+    }
+
+    @media (max-width: 950px) {
+        grid-template-columns: 1fr;
+    }
+}
+.footer__box {
+}
+.footer__title {
+    width: 100%;
+}
+.footer__menu {
+    display: flex;
+    justify-content: space-between;
+    gap: 10px;
+    align-items: center;
+    margin-top: 40px;
+
+    a{
+        text-transform: uppercase;
+        color: #251607;
+        text-decoration: none;
+        font-size: 28px;
+        font-weight: 600;
+    }
+
+    @media (max-width:650px) {
+        flex-direction: column;
+        gap: 30px;
+    }
+}
+.footer__eyes {
+    width: 100%;
+    border: 3px solid black;
+}
+.footer__text {
+    margin-top: 40px;
+    width: 100%;
 }
